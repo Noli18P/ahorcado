@@ -12,6 +12,7 @@ def main():
 	nombre = input('DIme tu nombre: ')
 
 	nombre = persona(edad,estatura)
-	nombre.printData
+	print(nombre.printData)
+
 
 main()
