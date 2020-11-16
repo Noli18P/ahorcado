@@ -14,5 +14,4 @@ def main():
 	nombre = persona(edad,estatura)
 	print(nombre.printData)
 
-
 main()
