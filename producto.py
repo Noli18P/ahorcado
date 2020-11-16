@@ -14,26 +14,32 @@ class producto:
 	def codigo(self):
 		return self.__codigo
 
+
 	@property
 	def nombre(self):
 		return self.__nombre
 	
+
 	@property
 	def precio(self):
 		return self.__precio
 	
+
 	#Setter
 	@codigo.setter
 	def codigo(self, valor):
 		self.__codigo = valor
 
+
 	@nombre.setter
 	def nombre(self,valor):
 		self.__nombre = valor
 
+
 	@precio.setter
 	def precio(self,valor):
 		self.__precio = valor
+
 
 	#To string
 	def __str__(self):
@@ -44,5 +50,15 @@ class producto:
 		total = self.precio * unidades
 
 		return total
-p1 = producto(1, 'Producto 1', 5)
-print(p1.calcular_total(5))
+
+class pedido:
+	def __init__(self,productos,cantidades):
+		self.__productos = productos
+		self.__cantidades = cantidades
+
+		def total_precio(self,cantidades):
+			
+
+
+		def mostrar_productos(self):
+			pass
