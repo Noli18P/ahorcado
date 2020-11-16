@@ -10,5 +10,6 @@ class producto:
 		self.__precio = precio
 
 	def calcular_total(self, unidades):
-		total = 0
-		unidades = unidades
+		total = precio * unidades
+
+		return total
