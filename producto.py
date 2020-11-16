@@ -35,6 +35,10 @@ class producto:
 	def precio(self,valor):
 		self.__precio = valor
 
+	#To string
+	def __str__(self):
+		return 'Codigo: ' + str(self.__codigo) + 'Nombre: ' + str(self.__nombre) + 'Precio: ' + str(self.__precio)  
+
 	#Metodo
 	def calcular_total(self, unidades):
 		total = precio * unidades
