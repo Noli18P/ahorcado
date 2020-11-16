@@ -15,11 +15,11 @@ class producto:
 		return self.__codigo
 
 	@property
-	def __nombre(self):
+	def nombre(self):
 		return self.___nombre
 	
 	@property
-	def __precio(self):
+	def precio(self):
 		return self.___precio
 	
 	#Setter
