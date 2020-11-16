@@ -73,9 +73,19 @@ def generar_palabra_secreta():
     return list(palabra)
 
 
-def mostrar_tablero(tablero,palabra_secreta):
+def mostrar_tablero(palabra_secreta):
     list(palabra_secreta)
-    print(tablero)
-    print(palabra_secreta)
+    intentos = 0
+    print(imagenes_ahorcado[intentos])
+    print('Letras incorrectas: ')
 
-mostrar_tablero(imagenes_ahorcado[0],generar_palabra_secreta())
+    print(palabra_secreta[0], end=(' '))
+    longitud_palabra = len(palabra_secreta)
+
+    for letra in range(longitud_palabra - 1):
+        print('_', end=(' '))
+    print('\nAdivina una letra: ')
+    letra_usuario = input()
+
+
+mostrar_tablero(generar_palabra_secreta())
