@@ -8,3 +8,5 @@ class producto:
 		self.codigo = codigo
 		self.nombre = nombre
 		self.precio = precio
+
+	def calcular_total(self, ):
