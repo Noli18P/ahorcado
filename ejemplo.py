@@ -3,5 +3,12 @@ class persona():
 		self.edad = edad
 		self.estatura = estatura
 
-persona = persona(18,1.68)
-print(persona.edad)
+def main():
+	edad = int(input('Ingresa tu edad'))
+	estatura = float(input('Ingresa tu estatura'))
+	nombre = input('DIme tu edad: ')
+
+	nombre = persona(edad,estatura)
+	print(nombre.edad, nombre.estatura)
+
+main()
