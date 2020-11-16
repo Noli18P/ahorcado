@@ -16,11 +16,11 @@ class producto:
 
 	@property
 	def nombre(self):
-		return self.___nombre
+		return self.__nombre
 	
 	@property
 	def precio(self):
-		return self.___precio
+		return self.__precio
 	
 	#Setter
 	@codigo.setter
@@ -37,10 +37,12 @@ class producto:
 
 	#To string
 	def __str__(self):
-		return 'Codigo: ' + str(self.__codigo) + 'Nombre: ' + str(self.__nombre) + 'Precio: ' + str(self.__precio)  
+		return 'Codigo: ' + str(self.__codigo) + ' Nombre: ' + str(self.__nombre) + ' Precio: ' + str(self.__precio)  
 
 	#Metodo
 	def calcular_total(self, unidades):
-		total = precio * unidades
+		total = self.precio * unidades
 
 		return total
+p1 = producto(1, 'Producto 1', 5)
+print(p1.calcular_total(5))
