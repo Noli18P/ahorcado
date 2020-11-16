@@ -56,9 +56,28 @@ class pedido:
 		self.__productos = productos
 		self.__cantidades = cantidades
 
-		def total_precio(self,cantidades):
+		def total_pedido(self):
+			total = 0
 			
+			for (p,c) in zip(self.__productos,self.__cantidades):
+				total += p.calcular_total(c)
+
+			return total
 
 
 		def mostrar_productos(self):
-			pass
+			for (p,c) in zip(self__productos,self.__cantidades):
+				print('Producto -> ', p.nombre, ' Cantidad -> ' + str(c))
+
+p1 = producto(1, 'Producto 1', 5)
+p2 = producto(2, 'Producto 2', 10)
+p3 = producto(1, 'Producto 3', 15)
+
+productos = [p1,p2,p3]
+cantidades = [5,10,2]
+
+mi_pedido = pedido(productos, cantidades)
+
+mi_pedido.total_pedido()
+
+mi_pedido.mostrar_productos()
