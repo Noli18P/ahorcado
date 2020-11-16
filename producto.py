@@ -5,8 +5,10 @@
 
 class producto:
 	def __init__(self, codigo, nombre, precio):
-		self.codigo = codigo
-		self.nombre = nombre
-		self.precio = precio
+		self.__codigo = codigo
+		self.__nombre = nombre
+		self.__precio = precio
 
-	def calcular_total(self, ):
+	def calcular_total(self, unidades):
+		total = 0
+		unidades = unidades
