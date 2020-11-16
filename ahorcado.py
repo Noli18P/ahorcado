@@ -12,8 +12,9 @@ def generar_palabra_secreta():
     
     return palabra
 
-def mostrar_tablero(palabra_secreta):
+def mostrar_tablero():
     tablero = ["""
+    A H O R C A D O
       +---+
       |   |
           |
@@ -69,4 +70,15 @@ def mostrar_tablero(palabra_secreta):
      / \  |
           |
     =========
-    """]
+    """]    
+
+    return tablero[0]
+
+def espacios_vacios(palabra_secreta):
+    for i in palabra_secreta:
+        print('_', end=(' '))
+
+
+
+print(mostrar_tablero())
+espacios_vacios(generar_palabra_secreta())
